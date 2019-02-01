@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import styled from "styled-components";
 
-export default class Home extends Components{
-  render(){
-    return(
+export const Container = styled.View`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 
-    )
-  }
-}
+export const BoxWeather = styled.View`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+`;

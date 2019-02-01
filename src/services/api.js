@@ -8,8 +8,8 @@ const url = axios.create({
 const APPID = "bd8326266ffeb1b662cf75fadf5dee2a";
 
 const api = {
-  weatherCity: city => url.get(""),
-  forecastCity: city => url.get("")
+  weatherCity: city => url.get(`weather?q=${city}&APPID=${APPID}`),
+  forecastCity: city => url.get(`forecast?q=${city}&APPID=${APPID}`)
 };
 
 export default api;
